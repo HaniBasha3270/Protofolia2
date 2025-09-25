@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #90bcf5;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        h1 {
+            color: #333;
+        }
+
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+     
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #0672ee;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 200px;
+            margin-left: 200px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        section {
+            width: 600px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <title>Sing up</title>
+</head>
+<a href="index.html">home</a> 
+       <section id="sing up">
+    <h2>Don't have an account? Sign up!</h2>
+    <form action="submit_signup" method="post">
+        
+        <label for="new-username">Username:</label><br>
+        <input type="text" id="new-username" name="new-username"><br><br>
+       
+        <label for="email" > Useremail</label> <br>
+        <input type="email" id="email" name="email" required><br>
+        
+        
+        <label for="new-password">Password:</label><br>
+        <input type="password" id="new-password" name="new-password"><br><br>
+        
+        <input type="submit" value="Sign Up">
+
+                                            
+    </form>
+
+         
+    </section>
+</body>
+ <a href="contact.html">Contact us</a>
+</html>

@@ -129,4 +129,15 @@ img{
     justify-content: space-evenly;
     align-items: center;
     align-items: space-between;
+    justify-content: space-around;
+}
+.b1{
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border: #333 solid 1px;
+    border-radius: 8px;
+    width: 280px;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }

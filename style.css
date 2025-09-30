@@ -13,12 +13,21 @@ body{
     margin-top: -150px;
 }
 #nav a {
-    float: left;
+    float: right;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    position: relative;
+}
+.title{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: rgb(92, 174, 245);
+    font-size: 34px;
+    font-weight: bold;
 }
 #nav a:hover {
     background-color: #ddd;
@@ -45,11 +54,19 @@ p {
     line-height: 1.6;
 }       
 #home {
-    background-color:white;
-    display: flex;
+    /* background-color:white; */
+    
+    background: linear-gradient ( #f31a62, white ) ;
+    height: 300px;
+    text-align: center;   
 }
+
 #about {
     background-color: #f9e7fe;
+    height: 300px;
+    text-align: center;
+    font-size: 20px;
+    
 }
 #porject {
     background-color: #e7fee7;
@@ -69,7 +86,7 @@ a:hover {
 .contact {      
      display: flex;
      justify-content:center;
-        align-items: center;
+     align-items: center;
      width: 100%;
      padding: 20px;
      
@@ -140,4 +157,51 @@ img{
     height: 300px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+}
+@media (max-width: 480px) {
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #1b1c1d;
+        margin-top: 100px;
+        font-size: 14px;
+        width: 100%;
+    }
+    #nav {
+        width: 100%;
+        margin-top: -100px;
+    }
+    
+    
+    .P-img, .B-img {
+        flex-direction: column;
+        align-items: center;
+       
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        gap: 20px;
+
+    }
+.nav a {
+    float: none;
+    display: block;
+    text-align: left;
+    height: 20px;
+}
+.contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} 
+
+
+
+
+
+
 }

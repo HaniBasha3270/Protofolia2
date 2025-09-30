@@ -87,6 +87,62 @@
     background-color: #ddd;
     color: black;
 }
+@media screen and (max-width: 480px) {
+    body{
+        margin-top: 0px;
+        padding: 10px;  
+        background-color: #0c0c0c;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #nav a {
+        float: none;
+        width: 100%;
+        display: flex;
+        text-align: left;
+       
+
+        
+    
+    }
+    section {
+        width: 90%;
+        align-items: center;
+        padding: 10px;
+    }
+    label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: rgb(22, 13, 63);
+            margin-left: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"]
+         {
+            width: 90%;
+            height: 40px;
+            padding: 0px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            background-color: #d4d1d1;
+            color: rgb(73, 39, 39);
+            border-radius: 4px; 
+        }
+        input[type="submit"] {
+            background-color: #0934f7;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 50%;
+            margin-left: 100px;
+        }
+} 
     </style>
     <title>Log in</title>
 </head>
